@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --bg-body: #141c2f;
+  --bg-dark-blue: #1f2a48;
+  --bg-blue: #0079fe;
+  --bg-white: #fff;
+  --font-main: "Space Mono", monospace;
+}
+
+body {
+  align-items: center;
+  background-color: var(--bg-body);
+  color: var(--bg-white);
+  display: flex;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.header-toggle {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  color: var(--bg-white);
+  column-gap: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.form-search {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-input-search {
+  background-color: var(--bg-dark-blue);
+  border-radius: 16px;
+  border: 0;
+  color: var(--bg-white);
+  outline: none;
+  padding: 1.5rem 2.8rem;
+  width: 100%;
+}
+
+.form-input-search::placeholder {
+  color: var(--bg-white);
+  font-family: var(--font-main);
+}
+
+.form-image-search,
+.form-button-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-image-search {
+  left: 0.8rem;
+}
+
+.form-button-search {
+  background-color: var(--bg-blue);
+  border-radius: 12px;
+  border: 0;
+  color: var(--bg-white);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1rem;
+  right: .5rem;
+}

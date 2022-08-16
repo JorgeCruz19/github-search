@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Search App</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header-title">devfinder</h1>
+        <button class="header-toggle">
+          Light
+          <img src="./assets/icon-sun.svg" alt="Sun" />
+        </button>
+      </header>
+      <form id="form" class="form-search">
+        <img src="./assets/icon-search.svg" class="form-image-search" alt="Search" />
+        <input type="text" class="form-input-search" placeholder="Search Github username..." />
+        <button type="submit" class="form-button-search">Search</button>
+      </form>
+
+      <main class="inner-container">
+        <section class="card">
+          <div class="card-header">
+            <div>
+              <img src="./assets/icon-user.svg" class="card-header-avatar" alt="User" />
+              <h2 class="card-header-username">User</h2>
+              <p class="card-header-at">@user</p>
+              <span class="card-header-join">Joined 25 Jan 2011</span>
+            </div>
+            <p class="card-header-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officia vero nisi eius. Exercitationem veniam cum delectus a dolorem
+              accusamus facere. Expedita maxime beatae vero maiores velit reprehenderit impedit neque!
+            </p>
+          </div>
+          <div class="card-body">
+            <div class="card-body-info">
+              <div class="card-body-info-repos">
+                <h4>Repos</h4>
+                <p>8</p>
+              </div>
+              <div class="card-body-info-repos">
+                <h4>Followers</h4>
+                <p>3938</p>
+              </div>
+              <div class="card-body-info-repos">
+                <h4>Following</h4>
+                <p>9</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-item">
+              <a href="#" class="card-footer-item-link">
+                <img src="./assets/icon-location.svg" alt="Location" />
+                <span>San Francisco</span>
+              </a>
+            </div>
+            <div class="card-footer-item">
+              <a href="#" class="card-footer-item-link">
+                <img src="./assets/icon-website.svg" alt="Website" />
+                <span>https://github.blog</span>
+              </a>
+            </div>
+            <div class="card-footer-item">
+              <a href="#" class="card-footer-item-link">
+                <img src="./assets/icon-twitter.svg" alt="Twitter" />
+                <span>Not Available</span>
+              </a>
+            </div>
+            <div class="card-footer-item">
+              <a href="#" class="card-footer-item-link">
+                <img src="./assets/icon-company.svg" alt="Company" />
+                <span>@github</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
