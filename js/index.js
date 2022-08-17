@@ -49,8 +49,8 @@ const loadTemplate = (data) => {
                 </div>
                 <span class="card-header-joined">Joined ${new Date(created_at).toLocaleDateString()}</span>
               </div>
+              <p class="card-header-description">${bio ? bio : "This profile has no bio"}</p>
             </div>
-            <p class="card-header-description">${bio ? bio : "This profile has no bio"}</p>
           </div>
           <div class="card-body">
             <div class="card-body-info">
