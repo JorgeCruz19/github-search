@@ -69,8 +69,21 @@ a {
 .is-error {
   color: crimson;
   font-size: 1.5rem;
-  grid-column: 1/3;
   text-align: center;
+}
+
+.error-404 {
+  fill: #141c2f;
+  width: 150px;
+  height: 150px;
+}
+
+.is-centered {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
@@ -248,7 +261,7 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .card{
+  .card {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -306,7 +319,8 @@ a {
     grid-column: 1/3;
   }
 
-  .card-header-flex{
+  .card-header-flex {
+    align-items: flex-start;
     grid-template-columns: 110px 1fr;
     row-gap: 0;
     width: 100%;
@@ -334,16 +348,15 @@ a {
     font-size: 1.2rem;
   }
 
-  .card-header-description{
+  .card-header-description {
     grid-column: 2/3;
-
   }
 
   .card-body {
     margin-bottom: 3rem;
     grid-column: 2/3;
   }
-  
+
   .card-body-info {
     text-align: left;
   }
@@ -351,11 +364,11 @@ a {
   .card-body-info-repos h4 {
     font-size: 1rem;
   }
-  
+
   .card-body-info-repos p {
     font-size: 1.7rem;
   }
-  
+
   .card-footer {
     grid-column: 2/3;
     margin-bottom: 3rem;
